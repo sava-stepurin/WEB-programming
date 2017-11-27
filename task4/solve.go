@@ -7,7 +7,7 @@ import (
 func RemoveEven(input []int) []int {
 	var result []int
 	for i, elem := range input {
-		if i % 2 == 1 {
+		if input[i] % 2 == 1 {
 			result = append(result, elem);
 		}
 	}
