@@ -26,32 +26,3 @@ button2.id = "add_task";
 button2.addEventListener("click", function(){add(input.value)});
 div.appendChild(input);
 div.appendChild(button2);
-
-
-
-
-
-/*var li = document.createElement('li');
-var span = document.createTextNode("Сделать задание #3 по web-программированию");
-
-li.appendChild(span);
-
-var button1 = document.createElement("button");
-button1.innerHTML = "Удалить";
-button1.addEventListener("click", function(){ li.remove()});
-
-li.appendChild(button1);
-ul.appendChild(li);
-div.appendChild(ul);
-
-var input = document.createElement("input");
-input.id = "add_task_input";
-
-var button2 = document.createElement("button");
-button2.innerHTML = "add_task";
-button2.id = "add_task";
-
-div.appendChild(input);
-div.appendChild(button2);
-
-button2.addEventListener("click", function(){ul.appendChild(input)});*/
