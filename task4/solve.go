@@ -39,7 +39,9 @@ func DifferentWordsCount(text string) int {
 	}
 	DifferentWords :=  make(map[string]int)
 	for i := range words {
-		DifferentWords[words[i]]++
+		if words[i] != "" {
+			DifferentWords[words[i]]++
+		}
 	}
 	return len(DifferentWords)
 }
