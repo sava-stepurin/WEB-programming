@@ -31,6 +31,7 @@ func DifferentWordsCount(text string) int {
 	for i := range text {
 		if unicode.IsLetter(rune(text[i])) {
 			words[j] = words[j] + string(unicode.ToLower(rune(text[i])))
+			EndOfWord = false
 		} else if !EndOfWord {
 			EndOfWord = true
 			words = append(words, "")
